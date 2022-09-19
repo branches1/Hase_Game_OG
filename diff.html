@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Differentiation!</title>
+		<link rel="stylesheet" href="diff.css" />
+		<script src="jquery-3.6.0.min.js"></script>
+		<script src="diff.js"></script>
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="assets/favicon/manifest.json" crossorigin="use-credentials" />
+		<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<header><h1>Differentiation!</h1></header>
+		<div class="new_game">
+		  <div id="rules">
+		    <h3>Rules:</h3>
+		    <p>Solve the differentiation problem within the given time limit.</p>
+		    <dl>
+			  <dt>Difficulty level 1:</dt>
+			  <dd>The time limit is 45 seconds. A correct solve will allow the victor to nominate a total of four fingers as they please. A failure to solve will result in a punishment of
+            four fingers.</dd>
+              <dt>Difficulty level 2:</dt>
+			  <dd>The time limit is 90 seconds. A correct solve will allow the victor to nominate a total of eight fingers as they please. A failure to solve will result in a punishment of six fingers.</dd>
+              <dt>Difficulty level 3:</dt>
+			  <dd>The time limit is three minutes. A correct solve will allow the victor to nominate two shots as they please. A failure to solve will result in a punishment of a shot.</dd>
+		    </dl>
+		    <p>Select a difficulty:</p>
+		  </div>
+		  <div id="difficulty">
+		    <button id="btn_easy"></button>
+		    <button id="btn_medium"></button>
+		    <button id="btn_hard"></button>
+		  </div>
+		  <br/>
+		</div>
+		<div id="countdown" class="timer countdown countdown-timer">
+		  <h6>GET READY</h6>
+		  <div class="timer-text"><p id="countdown_timer"></p></div>
+		</div>
+		<div id="problem" class="problem in_progress solution">
+		  <h4 class="problem-label">PROBLEM:</h4>
+		  <img alt="problem" id="problem-img" class="problem-img" />
+		</div>
+		<div id="hase" class="hase in_progress">
+		  <img id="hase_img" class="hase_img" alt="HASE" src="assets/img/hase.png" />
+		</div>
+		<div class="timer problem-timer in_progress">
+		  <h6>TIMER</h6>
+		  <div class="timer-text"><p id="timer"></p></div>
+		</div>
+		<div id="time_up_mask" class="time_up mask"></div>
+		<div id="time_up" class="time_up dlg">
+		  <h2>Out of time!</h2>
+		  <button id="show_solution">Show Solution</button>
+		</div>
+		<div id="solution" class="solution">
+		  <h4 class="solution-label">SOLUTION:</h4>
+		  <img alt="solution" id="solution-img" class="solution-img"/>
+		  <div class="solution-button"><button id="done">Done</button></div>
+		</div>
+	</body>
+</html>
